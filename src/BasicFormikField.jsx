@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class BasicFormikField extends Component {
+  // https://getbootstrap.com/docs/3.3/css/#forms-control-validation
   getFieldClasses = key => {
     return classNames('form-group', 'has-feedback', {
       'has-error': this.shouldDisplayError(key),
