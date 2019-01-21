@@ -56,13 +56,11 @@ class BasicFormikField extends Component {
           className={this.getIconClasses(fieldKey)}
           aria-hidden="true"
         />
-        {this.shouldDisplayError(fieldKey) ? (
-          <ErrorMessage
-            name={fieldKey}
-            component="span"
-            className="help-block"
-          />
-        ) : null}
+        <ErrorMessage
+          name={fieldKey}
+          component="span"
+          className="help-block"
+        />
       </div>
     );
   }
