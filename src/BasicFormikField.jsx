@@ -67,4 +67,5 @@ class BasicFormikField extends Component {
   }
 }
 
+// https://jaredpalmer.com/formik/docs/api/connect
 export default connect(BasicFormikField);
