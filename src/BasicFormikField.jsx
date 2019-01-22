@@ -14,12 +14,12 @@ class BasicFormikField extends Component {
 
   getIconClasses = (key) => {
     return classNames(
-      'form-control-feedback',
       'glyphicon',
       {
         'glyphicon-remove': this.shouldDisplayError(key),
         'glyphicon-ok': this.shouldDisplaySuccess(key),
       },
+      'form-control-feedback',
     );
   };
 
